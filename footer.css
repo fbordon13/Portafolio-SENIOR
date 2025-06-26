@@ -1,0 +1,42 @@
+/* Footer dinámico reutilizable */
+.dynamic-footer {
+  overflow: hidden;
+  min-height: 120px;
+  background: linear-gradient(90deg, #232526 0%, #0a1931 100%) !important; /* negro a azul marino */
+  color: #fff;
+  box-shadow: 0 -4px 24px 0 #185adb33;
+}
+.footer-bg-animated {
+  pointer-events: none;
+  height: 100%;
+  background: none;
+  bottom: 0;
+}
+.footer-bg-animated svg {
+  width: 100vw;
+  height: 120px;
+  display: block;
+}
+.social-icon {
+  transition: color 0.2s, transform 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+  position: relative;
+  color: #fff !important;
+}
+.social-icon:hover {
+  color: #185adb !important;
+  transform: scale(1.25) rotate(-8deg);
+  text-shadow: 0 0 8px #185adb88;
+}
+#footerCopyright {
+  font-family: 'Montserrat', monospace;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  white-space: pre;
+  border-right: 2px solid #185adb;
+  animation: blink-cursor 1s steps(1) infinite;
+  color: #e5e5e5;
+}
+@keyframes blink-cursor {
+  0%, 100% { border-color: #185adb; }
+  50% { border-color: transparent; }
+} 

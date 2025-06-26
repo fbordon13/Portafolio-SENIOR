@@ -1,0 +1,160 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernando Bordon | Portafolio Profesional</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+  <!-- Header profesional y dinámico -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky-top position-relative dynamic-header">
+    <div class="header-bg-animated position-absolute top-0 start-0 w-100 h-100" style="z-index:0;"></div>
+    <div class="container position-relative" style="z-index:1;">
+      <a class="navbar-brand fw-bold fs-3 d-flex align-items-center gap-2" href="#">
+        <span id="greeting" class="fw-bold">Fernando Bordon</span>
+        <span class="wave-emoji">👋</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+        <button id="themeToggle" class="btn btn-outline-info ms-3" title="Cambiar tema"><i class="bi bi-moon-stars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Sobre mí -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center mb-4 mb-md-0">
+          <img src="profile.jpg" alt="Fernando Bordon" class="rounded-circle shadow-lg img-fluid" style="max-width: 250px;">
+        </div>
+        <div class="col-md-7">
+          <h2 class="fw-bold mb-3">¡Hola! Soy Fernando Bordon</h2>
+          <p class="lead">Desarrollador web creativo y apasionado por el diseño elegante, la interactividad y la experiencia de usuario. Me especializo en crear soluciones digitales que destacan por su profesionalismo y originalidad.</p>
+          <ul class="list-unstyled">
+            <li>🌟 <b>Especialidad:</b> Frontend & UI/UX</li>
+            <li>💼 <b>Experiencia:</b> +5 años en desarrollo web</li>
+            <li>🚀 <b>Habilidades:</b> HTML, CSS, JavaScript, Bootstrap, React</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Experiencia -->
+  <section id="experience" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-5">Experiencia</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title">Senior Frontend Developer</h5>
+              <p class="card-text">Empresa Creativa XYZ<br><small class="text-muted">2021 - Actualidad</small></p>
+              <ul>
+                <li>Lideré proyectos de diseño web interactivo.</li>
+                <li>Implementé animaciones y microinteracciones.</li>
+                <li>Optimización de rendimiento y accesibilidad.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title">UI/UX Designer</h5>
+              <p class="card-text">Agencia Digital ABC<br><small class="text-muted">2019 - 2021</small></p>
+              <ul>
+                <li>Diseño de interfaces modernas y responsivas.</li>
+                <li>Investigación de usuario y prototipado.</li>
+                <li>Colaboración con equipos multidisciplinarios.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title">Desarrollador Web Junior</h5>
+              <p class="card-text">Startup Innovadora<br><small class="text-muted">2017 - 2019</small></p>
+              <ul>
+                <li>Desarrollo de landing pages y sitios corporativos.</li>
+                <li>Aprendizaje continuo de nuevas tecnologías.</li>
+                <li>Soporte y mantenimiento web.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Portafolio -->
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-5">Mi Portafolio</h2>
+      <div class="row g-4" id="portfolio-gallery">
+        <!-- Proyectos de portafolio se insertan dinámicamente con JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4">Contacto</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form id="contactForm" class="p-4 rounded-3 shadow-lg bg-white">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Enviar mensaje</button>
+            <div id="formAlert" class="mt-3"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer llamativo y dinámico -->
+  <footer class="bg-dark text-white py-4 mt-5 position-relative dynamic-footer overflow-hidden">
+    <div class="footer-bg-animated position-absolute top-0 start-0 w-100 h-100" style="z-index:0;"></div>
+    <div class="container text-center position-relative" style="z-index:1;">
+      <div class="mb-2 d-flex justify-content-center gap-4">
+        <a href="#" class="text-white fs-4 social-icon" title="GitHub"><i class="bi bi-github"></i></a>
+        <a href="#" class="text-white fs-4 social-icon" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="text-white fs-4 social-icon" title="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+      <p class="mb-0 mt-3"><span id="footerCopyright"></span></p>
+      <span class="position-absolute top-0 end-0 p-2"><i class="bi bi-stars"></i></span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 

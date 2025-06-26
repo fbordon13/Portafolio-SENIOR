@@ -1,0 +1,259 @@
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: linear-gradient(135deg, #0a1931 0%, #232526 100%);
+  color: #b0b3b8;
+}
+
+header.navbar {
+  background: linear-gradient(90deg, #0a1931 0%, #232526 100%);
+  border-bottom: 4px solid #185adb;
+}
+
+.navbar-brand {
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 8px #00000033;
+  color: #b0b3b8 !important;
+}
+
+.nav-link {
+  transition: color 0.2s;
+  color: #b0b3b8 !important;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #00c3ff !important; /* celeste */
+}
+
+section {
+  scroll-margin-top: 80px;
+  background: rgba(10, 25, 49, 0.7); /* azul marino translúcido */
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 32px 0 #185adb22;
+}
+
+#about img {
+  border: 6px solid #b0b3b8;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+}
+
+.card {
+  border-radius: 1.2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: rgba(35, 37, 38, 0.85);
+  color: #b0b3b8;
+  border: 1.5px solid #185adb33;
+  box-shadow: 0 8px 32px 0 #00c3ff22;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 32px 0 #00c3ff33;
+  border-color: #00c3ff;
+}
+
+#portfolio-gallery .card {
+  border: none;
+  background: linear-gradient(135deg, #232526 60%, #0a1931 100%);
+}
+
+#contactForm {
+  border: 2px solid #00c3ff22;
+  background: rgba(10, 25, 49, 0.85);
+  color: #b0b3b8;
+}
+
+.btn-dark {
+  background: linear-gradient(90deg, #185adb 0%, #00c3ff 100%);
+  border: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 16px 0 #00c3ff22;
+  transition: background 0.2s;
+  color: #b0b3b8;
+}
+
+.btn-dark:hover {
+  background: linear-gradient(90deg, #00c3ff 0%, #185adb 100%);
+  color: #232526;
+}
+
+footer {
+  background: linear-gradient(90deg, #232526 0%, #0a1931 100%);
+  box-shadow: 0 -4px 24px 0 #185adb33;
+  color: #b0b3b8;
+}
+
+footer a {
+  transition: color 0.2s, transform 0.2s;
+  color: #b0b3b8 !important;
+}
+
+footer a:hover {
+  color: #00c3ff !important;
+  transform: scale(1.2) rotate(-8deg);
+}
+
+footer .bi-stars {
+  font-size: 2rem;
+  color: #00c3ff;
+  filter: drop-shadow(0 0 6px #00c3ff88);
+}
+
+/* Header dinámico */
+.dynamic-header {
+  overflow: hidden;
+  min-height: 90px;
+}
+.header-bg-animated {
+  pointer-events: none;
+  height: 100%;
+  background: none;
+}
+.header-bg-animated svg {
+  width: 100vw;
+  height: 120px;
+  display: block;
+}
+.wave-emoji {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+  font-size: 1.7rem;
+  transform-origin: 70% 70%;
+}
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+#themeToggle {
+  border-radius: 50%;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.2rem;
+  transition: background 0.2s, color 0.2s;
+}
+body.theme-dark {
+  background: linear-gradient(135deg, #181c22 0%, #232526 100%);
+  color: #f8fafc;
+}
+body.theme-dark header.navbar,
+body.theme-dark footer {
+  background: linear-gradient(90deg, #181c22 0%, #232526 100%);
+  border-bottom: 4px solid #00c3ff;
+}
+body.theme-dark .card,
+body.theme-dark #portfolio-gallery .card {
+  background: linear-gradient(135deg, #232526 60%, #181c22 100%);
+  color: #f8fafc;
+}
+body.theme-dark .btn-dark {
+  background: linear-gradient(90deg, #00c3ff 0%, #232526 100%);
+}
+body.theme-dark .btn-dark:hover {
+  background: linear-gradient(90deg, #232526 0%, #00c3ff 100%);
+}
+
+/* Footer dinámico */
+.dynamic-footer {
+  overflow: hidden;
+  min-height: 120px;
+}
+.footer-bg-animated {
+  pointer-events: none;
+  height: 100%;
+  background: none;
+  bottom: 0;
+}
+.footer-bg-animated svg {
+  width: 100vw;
+  height: 120px;
+  display: block;
+}
+.social-icon {
+  transition: color 0.2s, transform 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+  position: relative;
+}
+.social-icon:hover {
+  color: #00c3ff !important;
+  transform: scale(1.25) rotate(-8deg);
+  text-shadow: 0 0 8px #00c3ff88;
+}
+#footerCopyright {
+  font-family: 'Montserrat', monospace;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  white-space: pre;
+  border-right: 2px solid #00c3ff;
+  animation: blink-cursor 1s steps(1) infinite;
+}
+@keyframes blink-cursor {
+  0%, 100% { border-color: #00c3ff; }
+  50% { border-color: transparent; }
+}
+
+/* Glassmorphism para cards y formularios */
+.card, #contactForm, .dynamic-footer, .dynamic-header {
+  background: rgba(10, 25, 49, 0.7) !important;
+  box-shadow: 0 8px 32px 0 #00c3ff22;
+  backdrop-filter: blur(8px);
+  border: 1.5px solid #185adb33;
+}
+
+/* Animaciones de entrada para secciones */
+.section-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(.68,-0.55,.27,1.55), transform 0.8s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.section-animate.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Detalles visuales para títulos */
+h2.fw-bold {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.3em;
+  color: #b0b3b8;
+}
+h2.fw-bold::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(90deg, #00c3ff 0%, #185adb 100%);
+  border-radius: 2px;
+  margin: 0.3em auto 0 auto;
+  opacity: 0.7;
+}
+
+/* Mejoras dark para inputs y fondo */
+body.theme-dark input, body.theme-dark textarea {
+  background: rgba(35,37,38,0.85) !important;
+  color: #b0b3b8 !important;
+  border: 1.5px solid #00c3ff44 !important;
+}
+body.theme-dark input:focus, body.theme-dark textarea:focus {
+  border-color: #00c3ff !important;
+  box-shadow: 0 0 0 2px #00c3ff33 !important;
+}
+
+/* Sombra y glow para elementos destacados */
+.fw-bold, .btn-dark, .social-icon:hover {
+  text-shadow: 0 2px 12px #00c3ff44, 0 0px 2px #000;
+}
+
+#about, #portfolio {
+  background: #0a1931 !important;
+  color: #fff !important;
+}
+
+#about h2, #portfolio h2, #about .fw-bold, #portfolio .fw-bold {
+  color: #fff !important;
+} 

@@ -1,0 +1,45 @@
+/* Header dinámico reutilizable */
+.dynamic-header {
+  overflow: hidden;
+  min-height: 90px;
+  background: linear-gradient(90deg, #0a1931 0%, #232526 100%) !important; /* azul marino a negro */
+  border-bottom: 4px solid #185adb; /* azul marino más claro */
+}
+.header-bg-animated {
+  pointer-events: none;
+  height: 100%;
+  background: none;
+}
+.header-bg-animated svg {
+  width: 100vw;
+  height: 120px;
+  display: block;
+}
+.wave-emoji {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+  font-size: 1.7rem;
+  transform-origin: 70% 70%;
+}
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+#themeToggle {
+  border-radius: 50%;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.2rem;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar-brand, .nav-link, .navbar-toggler-icon {
+  color: #fff !important;
+}
+.nav-link:hover, .nav-link.active {
+  color: #185adb !important;
+} 
